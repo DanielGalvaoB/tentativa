@@ -1,4 +1,4 @@
-continuar_usando = "sim"
+
 
 while True:   
 #crie um menu de operação 
@@ -55,10 +55,11 @@ while True:
         print(f"na divisao de {d1} e {d2} o resultado é {divizao} /n")
         print("*"*33,"/n")
 
-    else:
+    else :
         print("OPERAÇÃO INVALIDA!\n TENTE NOVAMENTE.")
 
-    continuar_usando = input("gostaria de fazer um novo calculo?").upper()
+    continuar_usando = input("gostaria de fazer um novo calculo? (s/n): ").strip().lower()
     print("*/n"*33)
-    if continuar_usando == "sim":
+    if continuar_usando != "s":
         break
+        
