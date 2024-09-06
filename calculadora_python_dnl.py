@@ -4,10 +4,10 @@ while True:
 #crie um menu de operação 
 
     print("SELECIONE A OPERAÇÃO DESEJADA")
-    print("+ PARA SOMAR")
-    print("- PARA SUBTRAIR")
-    print("* PARA MULTIPLICAR")
-    print("/ PARA DIVIDIR")
+    print("[1] PARA SOMAR")
+    print("[2] PARA SUBTRAIR")
+    print("[3] PARA MULTIPLICAR")
+    print("[4] PARA DIVIDIR")
 
     #INTERAÇÃO COM O USUARIO 
     operacao = input("qual operação você deseja realizar?\n")
@@ -16,7 +16,7 @@ while True:
 
     # adição
 
-    if operacao == "+":
+    if operacao == 1:
         a1 = float(input("digite o primeiro valor:\n"))
         a2 = float(input("digite o segundo valor:\n"))
         adicao = a1 + a2 
@@ -25,7 +25,7 @@ while True:
 
         
     #subtração
-    elif operacao == "-":
+    elif operacao == 2:
         b1 = float(input("/n digite o primeiro valor:"))
         b2 = float(input("/n digite o segundo valor:"))
         subtracao = b1 - b2 
@@ -35,7 +35,7 @@ while True:
 
         #multiplicação 
         
-    elif operacao == "*":
+    elif operacao == 3:
         c1 = float(input("digite o primeiro valor:\n"))
         c2 = float(input("digite o segundo valor:\n"))
         multiplicacao = c1 * c2 
@@ -45,7 +45,7 @@ while True:
 
         # divizão
         
-    elif operacao == "/":
+    elif operacao == 4:
         d1 = float(input("/n digite o primeiro valor:"))
         d2 = float(input("/n digite o segundo valor:"))
         while d2 == 0:
